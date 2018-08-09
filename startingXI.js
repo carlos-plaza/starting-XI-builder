@@ -10,7 +10,7 @@ const addDefBtn = document.querySelector('add-defender');
 //FUNCTIONS - CREATE AND REMOVE PLAYERS
 
 const removePlayers = (position) => {
-  let positionLine = document.querySelectorAll(`.${position}.team-1 > .player`);
+  let positionLine = document.querySelectorAll(`.${position} > .player`);
   positionLine.forEach( (player) => {
     player.remove();
   });
@@ -32,7 +32,7 @@ const createNewPlayer = (position) => {
 
 const addPlayers = (positionRow, position) => {
   //Grab position row and add new player
-  let positionLine = document.querySelector(`.${positionRow}.team-1`);
+  let positionLine = document.querySelector(`.${positionRow}`);
   positionLine.appendChild(createNewPlayer(position));
 }
 
@@ -56,26 +56,26 @@ function fourFourTwo() {
 function fourThreeThree() {
   removeAllPlayers();
 
-  addPlayers('defenders', 'RB');
-  addPlayers('defenders', 'CB');
-  addPlayers('defenders', 'CB');
   addPlayers('defenders', 'LB');
+  addPlayers('defenders', 'CB');
+  addPlayers('defenders', 'CB');
+  addPlayers('defenders', 'RB');
   addPlayers('midfielders', 'CM');
   addPlayers('midfielders', 'CDM');
   addPlayers('midfielders', 'CM');
-  addPlayers('forwards', 'RW');
-  addPlayers('forwards', 'ST');
   addPlayers('forwards', 'LW');
+  addPlayers('forwards', 'ST');
+  addPlayers('forwards', 'RW');
 }
 
 function fiveThreeTwo() {
   removeAllPlayers();
 
-  addPlayers('defenders', 'RWB');
-  addPlayers('defenders', 'RCB');
-  addPlayers('defenders', 'CB');
-  addPlayers('defenders', 'LCB');
   addPlayers('defenders', 'LWB');
+  addPlayers('defenders', 'LCB');
+  addPlayers('defenders', 'CB');
+  addPlayers('defenders', 'RCB');
+  addPlayers('defenders', 'RWB');
   addPlayers('midfielders', 'CM');
   addPlayers('midfielders', 'CM');
   addPlayers('midfielders', 'CM');

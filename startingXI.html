@@ -7,100 +7,104 @@
     <link rel="stylesheet" href="startingXI.css">
   </head>
   <body>
-    <h1>CSS Soccer Field</h1>
-    <div>Choose your formation</div>
-    <button type="button" class="four-three-three">4-3-3</button>
-    <button type="button" class="four-four-two">4-4-2</button>
-    <button type="button" class="five-three-two">5-3-2</button>
-    <button type="button" class="remove-all-players">remove all players</button>
-
-    <div class="pitch"> <!-- PITCH START-->
-
-      <!-- TOP HALF START -->
-      <div class="corner corner-top-left"></div>
-      <div class="corner corner-top-right"></div>
-      <div class="six-yard-box-top"></div>
-      <div class="eighteen-yard-box-top"></div>
-      <div class="eighteen-yard-half-circle-top"></div>
-      <!-- TOP HALF END -->
-
-      <!-- CENTER START -->
-
-      <div class="center-circle"></div>
-      <div class="center-line"></div>
-
-      <!-- CENTER END -->
-
-      <!-- BOTTOM HALF START -->
-      <div class="corner corner-bottom-left"></div>
-      <div class="corner corner-bottom-right"></div>
-      <div class="six-yard-box-bottom"></div>
-      <div class="eighteen-yard-half-circle-bottom"></div>
-      <div class="eighteen-yard-box-bottom"></div>
-      <!-- BOTTOM HALF END -->
-
-      <!--   TEAM START   -->
-
-      <div class="team-1 goalkeeper">
-        <div class="player">
-          <div class="player-position">GK</div>
-          <input type="text" placeholder="click to edit" class="player-name">
-        </div>
+    <div class="container">
+      <h1>Build Your Starting 11</h1>
+      <div class="formation-selection">
+        <h2>Choose your formation</h2>
+        <button type="button" class="four-three-three">4-3-3</button>
+        <button type="button" class="four-four-two">4-4-2</button>
+        <button type="button" class="five-three-two">5-3-2</button>
+        <button type="button" class="remove-all-players">remove all players</button>
       </div>
 
-      <div class="team-1 defenders">
-        <div class="player">
-          <div class="player-position">LB</div>
-          <input type="text" placeholder="click to edit" class="player-name">
-        </div>
-        <div class="player">
-          <div class="player-position">CB</div>
-          <input type="text" placeholder="click to edit" class="player-name">
-        </div>
-        <div class="player">
-          <div class="player-position">CB</div>
-          <input type="text" placeholder="click to edit" class="player-name">
-        </div>
-        <div class="player">
-          <div class="player-position">RB</div>
-          <input type="text" placeholder="click to edit" class="player-name">
-        </div>
-      </div>
+      <div class="pitch"> <!-- PITCH START-->
 
-      <div class="team-1 midfielders">
-        <div class="player">
-          <div class="player-position">CM</div>
-          <input type="text" placeholder="click to edit" class="player-name">
-        </div>
-        <div class="player">
-          <div class="player-position">CDM</div>
-          <input type="text" placeholder="click to edit" class="player-name">
-        </div>
-        <div class="player">
-          <div class="player-position">CM</div>
-          <input type="text" placeholder="click to edit" class="player-name">
-        </div>
-      </div>
+        <!-- TOP HALF START -->
+        <div class="corner corner-top-left"></div>
+        <div class="corner corner-top-right"></div>
+        <div class="six-yard-box-top"></div>
+        <div class="eighteen-yard-box-top"></div>
+        <div class="eighteen-yard-half-circle-top"></div>
+        <!-- TOP HALF END -->
 
-      <div class="team-1 forwards">
-        <div class="player">
-          <div class="player-position">LW</div>
-          <input type="text" placeholder="click to edit" class="player-name">
-        </div>
-        <div class="player">
-          <div class="player-position">ST</div>
-          <input type="text" placeholder="click to edit" class="player-name">
-        </div>
-        <div class="player">
-          <div class="player-position">RW</div>
-          <input type="text" placeholder="click to edit" class="player-name">
-        </div>
-      </div>
+        <!-- CENTER START -->
 
-      <!--   TEAM END    -->
+        <div class="center-circle"></div>
+        <div class="center-line"></div>
 
-    </div> <!-- PITCH END-->
+        <!-- CENTER END -->
 
+        <!-- BOTTOM HALF START -->
+        <div class="corner corner-bottom-left"></div>
+        <div class="corner corner-bottom-right"></div>
+        <div class="six-yard-box-bottom"></div>
+        <div class="eighteen-yard-half-circle-bottom"></div>
+        <div class="eighteen-yard-box-bottom"></div>
+        <!-- BOTTOM HALF END -->
+
+        <!--   TEAM START   -->
+
+        <div class="goalkeeper">
+          <div class="player">
+            <div class="player-position">GK</div>
+            <input type="text" placeholder="click to edit" class="player-name">
+          </div>
+        </div>
+
+        <div class="defenders">
+          <div class="player">
+            <div class="player-position">LB</div>
+            <input type="text" placeholder="click to edit" class="player-name">
+          </div>
+          <div class="player">
+            <div class="player-position">CB</div>
+            <input type="text" placeholder="click to edit" class="player-name">
+          </div>
+          <div class="player">
+            <div class="player-position">CB</div>
+            <input type="text" placeholder="click to edit" class="player-name">
+          </div>
+          <div class="player">
+            <div class="player-position">RB</div>
+            <input type="text" placeholder="click to edit" class="player-name">
+          </div>
+        </div>
+
+        <div class="midfielders">
+          <div class="player">
+            <div class="player-position">CM</div>
+            <input type="text" placeholder="click to edit" class="player-name">
+          </div>
+          <div class="player">
+            <div class="player-position">CDM</div>
+            <input type="text" placeholder="click to edit" class="player-name">
+          </div>
+          <div class="player">
+            <div class="player-position">CM</div>
+            <input type="text" placeholder="click to edit" class="player-name">
+          </div>
+        </div>
+
+        <div class="forwards">
+          <div class="player">
+            <div class="player-position">LW</div>
+            <input type="text" placeholder="click to edit" class="player-name">
+          </div>
+          <div class="player">
+            <div class="player-position">ST</div>
+            <input type="text" placeholder="click to edit" class="player-name">
+          </div>
+          <div class="player">
+            <div class="player-position">RW</div>
+            <input type="text" placeholder="click to edit" class="player-name">
+          </div>
+        </div>
+
+        <!--   TEAM END    -->
+
+      </div> <!-- PITCH END-->
+
+    </div>
   <script src="startingXI.js"></script>
   </body>
 </html>
