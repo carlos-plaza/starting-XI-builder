@@ -10,11 +10,20 @@
     <div class="container">
       <h1>Build Your Starting 11</h1>
       <div class="formation-selection">
-        <h2>Choose your formation</h2>
-        <button type="button" class="four-three-three">4-3-3</button>
+
+        <label for="formation-dropdown">Choose your formation:</label>
+
+        <select id="formation-dropdown">
+          <option value="">--Please choose your formation--</option>
+          <option value="433" class="four-three-three">4-3-3</option>
+          <option value="442" class="four-four-two">4-4-2</option>
+          <option value="532" class="five-three-two">5-3-2</option>
+        </select>
+
+        <!-- <button type="button" class="four-three-three">4-3-3</button>
         <button type="button" class="four-four-two">4-4-2</button>
         <button type="button" class="five-three-two">5-3-2</button>
-        <button type="button" class="remove-all-players">remove all players</button>
+        <button type="button" class="remove-all-players">remove all players</button> -->
       </div>
 
       <div class="pitch"> <!-- PITCH START-->
