@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-  background-color: rgba(40, 60, 80);
+  background-color: rgb(40, 60, 80);
   font-family: "Open Sans", sans-serif;
   padding: 10px 5%;
   font-size: 18px;

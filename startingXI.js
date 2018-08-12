@@ -4,8 +4,7 @@ const BUTTON_433 = document.querySelector('.four-three-three');
 const BUTTON_442 = document.querySelector('.four-four-two');
 const BUTTON_532 = document.querySelector('.five-three-two');
 const BUTTON_352 = document.querySelector('.three-five-two');
-const removeAllBtn = document.querySelector('.remove-all-players');
-const addDefBtn = document.querySelector('add-defender');
+const FORM_DROPDOWN = document.querySelector('#formation-dropdown');
 
 //FUNCTIONS - CREATE AND REMOVE PLAYERS
 
@@ -90,4 +89,17 @@ BUTTON_433.addEventListener('click', fourThreeThree);
 BUTTON_442.addEventListener('click', fourFourTwo);
 BUTTON_532.addEventListener('click', fiveThreeTwo);
 
-removeAllBtn.addEventListener('click', removeAllPlayers);
+FORM_DROPDOWN.addEventListener('change', function(event) {
+  switch(event.target.value) {
+    case '433':
+      fourThreeThree;
+      break;
+    case '442':
+      fourFourTwo;
+      break;
+    case '532':
+      fiveThreeTwo;
+      break;
+  }
+});
+
